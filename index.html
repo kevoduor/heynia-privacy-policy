@@ -1,89 +1,157 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>HeyNia Privacy Policy</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacy Policy — HeyNia</title>
+  <meta name="description" content="HeyNia Privacy Policy, how we collect and protect clinic and patient data, contact hey@heynia.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-      max-width: 720px;
-      margin: 48px auto;
-      padding: 0 24px;
-      line-height: 1.65;
-      color: #1a1a1a;
-      background: #fff;
-      letter-spacing: -0.04em; /* approx -4% */
+    :root{
+      --bg:#ffffff;
+      --muted:#6b7280;
+      --accent:#0a66ff;
+      --accent-2:#0066cc;
+      --text:#0b1220;
+      --card:#f7fbff;
+      --glass: rgba(255,255,255,0.6);
+      --container: 1100px;
+      --radius: 14px;
     }
-    h1, h2, h3 {
-      color: #0a3d62;
-      font-weight: 700;
-      margin-top: 2em;
-      margin-bottom: 0.6em;
+
+    html,body{height:100%;}
+    body{
+      font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      margin:0;
+      color:var(--text);
+      background:linear-gradient(180deg,#fbfdff 0%,#ffffff 100%);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      letter-spacing:-0.04em; /* approx -4% */
+      line-height:1.6;
     }
-    p, ul {
-      font-weight: 400;
-      font-size: 1rem;
-      margin-bottom: 1.3em;
+
+    .wrap{
+      max-width:var(--container);
+      margin:48px auto;
+      padding:36px;
     }
-    ul {
-      padding-left: 1.4em;
-      list-style-type: disc;
+
+    header.top {
+      display:flex;
+      gap:24px;
+      align-items:center;
+      justify-content:space-between;
+      margin-bottom:28px;
     }
-    a {
-      color: #0984e3;
-      text-decoration: none;
-      transition: color 0.2s ease-in-out;
+
+    .brand {
+      display:flex;
+      gap:14px;
+      align-items:center;
     }
-    a:hover {
-      color: #0652dd;
-      text-decoration: underline;
+    .logo {
+      width:64px;
+      height:64px;
+      border-radius:12px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:linear-gradient(135deg,#0a66ff 0%,#2dd4bf 100%);
+      box-shadow: 0 6px 30px rgba(10,102,255,0.12);
+      flex:0 0 64px;
     }
-  </style>
-</head>
-<body>
-  <h1>HeyNia Privacy Policy</h1>
-  <p><strong>Last updated:</strong> August 12, 2025</p>
+    .logo svg{width:36px;height:36px;fill:white}
 
-  <p>HeyNia (“we”, “us”, “our”) respects your privacy. This policy explains how we collect, use, and share your personal data when you visit heynia.com or use our services.</p>
+    .brand h1{
+      font-size:18px;
+      margin:0;
+      font-weight:700;
+      letter-spacing:-0.03em;
+    }
+    .brand p{margin:0;color:var(--muted);font-size:13px;}
 
-  <h2>1. What Data We Collect</h2>
-  <ul>
-    <li><strong>Directly from you:</strong> name, email, phone, billing info, account credentials, support communications</li>
-    <li><strong>Automatically:</strong> device info, IP address, browser type, cookies, usage data</li>
-    <li><strong>From partners:</strong> payment processors, marketing platforms, analytics providers</li>
-  </ul>
+    .actions{
+      display:flex;
+      gap:12px;
+      align-items:center;
+    }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:12px 16px;
+      border-radius:10px;
+      font-weight:600;
+      text-decoration:none;
+      cursor:pointer;
+    }
+    .btn.secondary{
+      background:transparent;
+      color:var(--accent);
+      border:1px solid rgba(10,102,255,0.12);
+    }
+    .btn.primary{
+      background:var(--accent);
+      color:white;
+      box-shadow: 0 8px 30px rgba(10,102,255,0.12);
+    }
 
-  <h2>2. How We Use Your Data</h2>
-  <ul>
-    <li>To provide and improve our services</li>
-    <li>To process payments and fulfill orders</li>
-    <li>To communicate important updates and support</li>
-    <li>For marketing and personalized advertising (with opt-out options)</li>
-    <li>To protect against fraud and secure our platform</li>
-  </ul>
+    main.hero{
+      display:grid;
+      grid-template-columns: 1fr 420px;
+      gap:32px;
+      align-items:start;
+      margin-bottom:28px;
+    }
 
-  <h2>3. Sharing Your Information</h2>
-  <p>We share your data only with trusted service providers who help run HeyNia, such as payment gateways, cloud hosts, and marketing partners. We never sell your personal info.</p>
+    .hero .content{
+      background: linear-gradient(180deg, rgba(10,102,255,0.03), transparent);
+      border-radius:16px;
+      padding:28px;
+      box-shadow: 0 10px 40px rgba(10,102,255,0.04);
+      border:1px solid rgba(10,102,255,0.03);
+    }
+    .kicker{
+      display:inline-block;
+      background:rgba(10,102,255,0.08);
+      color:var(--accent-2);
+      padding:6px 10px;
+      border-radius:10px;
+      font-weight:700;
+      font-size:12px;
+      margin-bottom:12px;
+    }
+    h2{font-size:28px;margin:0 0 10px 0;}
+    .lede{color:var(--muted); margin:0 0 18px 0;}
 
-  <h2>4. Your Privacy Rights</h2>
-  <p>Depending on your location, you may have rights to access, correct, delete, or restrict your data. You can also opt out of marketing communications at any time.</p>
+    .cta-row{display:flex;gap:12px;margin-top:16px;}
+    .small-cta{font-size:14px;padding:10px 12px;border-radius:10px;border:1px solid rgba(11,18,32,0.06)}
 
-  <h2>5. Cookies & Tracking</h2>
-  <p>We use cookies and similar technologies to enhance your experience and collect usage info. You can manage cookie preferences through your browser.</p>
+    .aside{
+      background:linear-gradient(180deg,#ffffff,#f7fbff);
+      border-radius:16px;
+      padding:20px;
+      display:flex;
+      flex-direction:column;
+      gap:18px;
+      align-items:stretch;
+      justify-content:flex-start;
+    }
+    .trust{
+      display:flex;
+      gap:12px;
+      align-items:center;
+    }
+    .trust .icon{
+      background:linear-gradient(180deg,#eef7ff,#ffffff);
+      padding:10px;
+      border-radius:10px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      box-shadow:0 6px 20px rgba(10,102,255,0.06);
+    }
+    .trust p{margin:0;font-weight:600;color:var(--muted);font-size:13px;}
 
-  <h2>6. Children’s Privacy</h2>
-  <p>HeyNia does not knowingly collect data from children under 16. If you believe your child has provided us with personal data, please contact us to delete it.</p>
-
-  <h2>7. Data Security & Retention</h2>
-  <p>We implement industry-standard safeguards to protect your data but cannot guarantee perfect security. We retain your data as needed to provide services and comply with legal obligations.</p>
-
-  <h2>8. Changes to This Policy</h2>
-  <p>We may update this policy occasionally. We’ll notify you by updating the date and posting changes on our site.</p>
-
-  <h2>9. Contact Us</h2>
-  <p>For privacy questions or requests, email us at <a href="mailto:hey@heynia.com">hey@heynia.com</a>.</p>
-</body>
-</html>
+    /* policy body */
